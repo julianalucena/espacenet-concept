@@ -1,0 +1,8 @@
+{{#each result in controller}}
+  {{result.formattedKeywords}}
+  <ul>
+  {{#each item in result.items}}
+    <li>{{item.name}}</li>
+  {{/each}}
+  </ul>
+{{/each}}
